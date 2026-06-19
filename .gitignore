@@ -1,0 +1,78 @@
+# ========================
+# Build / Target
+# ========================
+target/
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# Maven Wrapper
+.mvn/wrapper/maven-wrapper.jar
+
+# ========================
+# Environment Files
+# ========================
+.env
+
+# ========================
+# Logs
+# ========================
+*.log
+logs/
+
+# ========================
+# IDE - STS / Eclipse
+# ========================
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache
+
+# ========================
+# IntelliJ
+# ========================
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# ========================
+# NetBeans
+# ========================
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# ========================
+# VS Code
+# ========================
+.vscode/
+
+# ========================
+# OS Files
+# ========================
+.DS_Store
+Thumbs.db
+
+# ========================
+# Python (if used)
+# ========================
+*.py
+test_*.py
+
+# ========================
+# Sensitive Config (IMPORTANT)
+# ========================
+
+# ❌ DO NOT ignore full application.properties
+# src/main/resources/application.properties   <-- REMOVE THIS LINE
+
+# ✅ Instead ignore secrets file
+src/main/resources/application-secret.properties

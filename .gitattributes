@@ -1,0 +1,19 @@
+# Force LF for all text files on checkout (prevents CRLF issues on Railway/Linux)
+* text=auto eol=lf
+
+# Explicitly LF
+/mvnw text eol=lf
+/Dockerfile text eol=lf
+*.sh text eol=lf
+*.java text eol=lf
+*.xml text eol=lf
+*.properties text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.sql text eol=lf
+
+# Windows scripts keep CRLF
+*.cmd text eol=crlf
+*.bat text eol=crlf
